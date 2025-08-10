@@ -22,3 +22,4 @@ variable "common_tags" {
   description = "Common tags map"
   type        = map(string)
 }
+#
