@@ -12,3 +12,4 @@ provider "azurerm" {
   # No need to explicitly set them
   features {}
 }
+#
