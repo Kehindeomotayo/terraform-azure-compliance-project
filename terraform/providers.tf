@@ -11,10 +11,13 @@ terraform {
 provider "azurerm" {
   features {}
 
+  # Explicitly set credentials using variables
+  subscription_id = var.subscription_id
+  tenant_id       = var.tenant_id
+  client_id       = var.client_id
+  client_secret   = var.client_secret
+
   # Explicitly disable other authentication methods
   use_cli = false
   use_msi = false
-
-  # The ARM_* environment variables will be automatically used
-  # No need to explicitly set subscription_id, tenant_id, etc.
 }
