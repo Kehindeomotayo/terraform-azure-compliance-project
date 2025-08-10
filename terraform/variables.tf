@@ -16,10 +16,10 @@ variable "resource_prefix" {
 variable "common_tags" {
   description = "Common tags for all resources"
   type        = map(string)
-  default     = {
-    Owner       = "YourName"
-    Department  = "IT"
-    Project     = "Azure Compliance"
+  default = {
+    Owner      = "YourName"
+    Department = "IT"
+    Project    = "Azure Compliance"
   }
 }
 
