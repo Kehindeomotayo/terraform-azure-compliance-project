@@ -44,3 +44,4 @@ resource "azurerm_resource_group" "enterprise" {
 #   name     = "enterprise-rg"
 #   location = var.location
 # }
+#
