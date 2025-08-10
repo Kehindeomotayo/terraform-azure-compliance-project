@@ -1,8 +1,8 @@
-location        = "East US"
-resource_prefix = "myproj"
-
+resource_group_name = "rg-terraform-compliance"
+location           = "East US"
+resource_prefix    = "compliance"
 common_tags = {
-  Owner       = "Kehinde Omotayo"
   Environment = "Development"
-  Project     = "Terraform-Azure-Project"
+  Project     = "Azure-Compliance"
+  Owner       = "DevOps"
 }
