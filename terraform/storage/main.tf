@@ -7,3 +7,4 @@ resource "azurerm_storage_account" "storage" {
 
   tags = var.common_tags
 }
+#
