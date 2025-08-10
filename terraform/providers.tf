@@ -1,8 +1,14 @@
-provider "azurerm" {
-  features {}
+terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "~>4.0"
+    }
+  }
+}
 
-  subscription_id = var.subscription_id
-  tenant_id       = var.tenant_id
-  client_id       = var.client_id
-  client_secret   = var.client_secret
+provider "azurerm" {
+  # These will automatically use ARM_* environment variables
+  # No need to explicitly set them
+  features {}
 }
